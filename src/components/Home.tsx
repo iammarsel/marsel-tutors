@@ -11,7 +11,7 @@ import avatar_img from '../assets/profile.png';
 import unity_img from '../assets/unity.png';
 const Home: React.FC = () => {
   return (
-    <div className='mt-10'>
+    <div className='mt-10 dark:bg-black text-black dark:text-white'>
       <Navbar />
 
       {
@@ -39,7 +39,7 @@ previous teaching experience and professional knowledge
       }
 
       {/* New welcome area div */}
-      <div className="flex justify-center items-center text-center h-full mx-4">
+      <div className="flex justify-center items-center text-center h-full mx-4 ">
         {/* Left side content */}
         <div className="w-1/2 px-4 py-12">
           <h1 className="text-4xl font-bold mb-4">Welcome to <span className='text-baby_blue'>Marsel</span><span className='text-peach'>Tutors</span></h1>

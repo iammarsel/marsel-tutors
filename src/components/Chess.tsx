@@ -5,7 +5,7 @@ const Chess: React.FC = () => {
   return (
     <>
     <Navbar />
-    <div className="flex flex-col mt-16">
+    <div className="flex flex-col mt-16 dark:bg-black text-black dark:text-white">
       {/* Full-width header image */}
       <div style={{maxHeight: '60vh'}}className="w-full overflow-hidden">
         <img src={ chess_banner } alt="Chess Banner" className="w-full h-auto" />
@@ -28,7 +28,7 @@ const Chess: React.FC = () => {
             <li>rating goal: 1500+</li>
           </ul>
         </div>
-        <div className="bg-yellow-600 p-4 rounded-lg shadow-md text-white">
+        <div className="bg-yellow-600 p-4 rounded-lg shadow-md">
           <h2 className="font-semibold text-lg">ADVANCED</h2>
           <ul className="list-disc ml-4 mt-2">
             <li>tournament games analysis</li>
