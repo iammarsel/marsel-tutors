@@ -1,6 +1,7 @@
 import React from 'react';
 import chess_banner from '../assets/chess_banner.png';
 import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 const Chess: React.FC = () => {
   return (
     <>
@@ -45,9 +46,9 @@ const Chess: React.FC = () => {
         <p>10 Lesson Pack $400 (Save $100)</p>
       </div>
       <div className="text-center my-8">
-        <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+      <Link to="https://calendly.com/marsel-tutors/chess" target="_blank" rel="noopener noreferrer" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" >
           Schedule Your First Lesson
-        </button>
+      </Link>
       </div>
     </div>
     </>

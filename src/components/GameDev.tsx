@@ -49,7 +49,7 @@ const GameDev: React.FC = () => {
           <p>10 Lesson Pack $600 (Save $100)</p>
         </div>
         <div className="text-center my-8">
-        <Link to="/register-gamedev" className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
+        <Link to="https://calendly.com/marsel-tutors/game-development" target="_blank" rel="noopener noreferrer" className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
             Enroll in Game Development
         </Link>
         </div>

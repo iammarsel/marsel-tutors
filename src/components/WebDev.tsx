@@ -49,7 +49,7 @@ const WebDev: React.FC = () => {
           <p>10 Lesson Pack $500 (Save $100)</p>
         </div>
         <div className="text-center my-8">
-        <Link to="/register-webdev" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <Link to="https://calendly.com/marsel-tutors/web-development" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             Enroll in Web Development
         </Link>
         </div>

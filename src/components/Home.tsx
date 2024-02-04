@@ -20,7 +20,7 @@ const Home: React.FC = () => {
         <div className="w-1/2 px-4 py-12">
           <h1 className="text-4xl font-bold mb-4">Welcome to <span className='text-baby_blue'>Marsel</span><span className='text-peach'>Tutors</span></h1>
           <p className="text-xl mb-4">Hi my name is Marsel, and I am a professional tutor! I have been tutoring professionally online for 3 years for a range of topics including Computer Science, Game Development, Chess, and more! Check out more details below, I hope you can find what you are looking for!</p>
-          <Link className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" to="/register">
+          <Link className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" to="https://calendly.com/marsel-tutors" target="_blank" rel="noopener noreferrer" >
             Start Now
           </Link>
         </div>

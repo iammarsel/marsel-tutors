@@ -49,7 +49,7 @@ const CompSci: React.FC = () => {
           <p>10 Lesson Pack $400 (Save $100)</p>
         </div>
         <div className="text-center my-8">
-        <Link to="/register" className="bg-yellow-300 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded">
+        <Link to="https://calendly.com/marsel-tutors/python" target="_blank" rel="noopener noreferrer" className="bg-yellow-300 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded">
             Schedule Your First Lesson
         </Link>
         </div>
