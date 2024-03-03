@@ -145,7 +145,7 @@ const Home: React.FC = () => {
       </div>
       <div className='text-center mb-12'>
       <h1 className="text-center text-2xl m-8">LIMITED TIME ONLY: GET YOUR FIRST LESSON FOR FREE IN ANY TOPIC YOU WANT TO LEARN</h1>
-      <Link className="bg-baby_blue rounded-xl hover:bg-blue-500 text-white font-bold py-2 px-4" to="/register">
+      <Link className="bg-baby_blue rounded-xl hover:bg-blue-500 text-white font-bold py-2 px-4" to="https://calendly.com/marsel-tutors/meeting">
         Start Now
       </Link>
       </div>
