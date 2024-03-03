@@ -20,18 +20,16 @@ const WebDev: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col mt-16 dark:bg-black text-black dark:text-white">
+      <div className="flex flex-col mt-14 dark:bg-black text-black dark:text-white">
         {/* Full-width header image */}
         <div style={{ maxHeight: '60vh' }} className="w-full overflow-hidden">
           <img src={webDevBanner} alt="Web Development Banner" className="w-full h-auto" />
         </div>
 
-        <div className="text-center my-8">
-          <h1 className="text-3xl font-bold">MASTERING WEB DEVELOPMENT: 10 WEEK PROGRAM</h1>
-        </div>
+        <h1 className="text-center text-6xl font-semibold my-6">WEB DEVELOPMENT</h1>
 
         {/* Weekly Modules */}
-        <div className="flex flex-col my-8 mx-4">
+        <div className="flex flex-col my-b mx-4">
           {weeks.map((week, index) => (
             <div key={index} className="bg-blue-200 text-black p-4 rounded-lg shadow-md mb-4">
               <h2 className="font-semibold text-lg">{week.title}</h2>
@@ -49,7 +47,7 @@ const WebDev: React.FC = () => {
           <p>10 Lesson Pack $500 (Save $100)</p>
         </div>
         <div className="text-center my-8">
-        <Link to="https://calendly.com/marsel-tutors/web-development" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <Link to="https://calendly.com/marsel-tutors/meeting" target="_blank" rel="noopener noreferrer" className="bg-baby_blue hover:bg-blue-500 rounded-2xl text-white font-bold py-2 px-4 rounded">
             Enroll in Web Development
         </Link>
         </div>

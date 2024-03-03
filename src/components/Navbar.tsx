@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png';
 import { DarkModeContext } from '../DarkModeContext';
 const Navbar: React.FC = () => {
   const { darkMode, setDarkMode } = useContext(DarkModeContext);
@@ -15,14 +14,14 @@ const Navbar: React.FC = () => {
     
 
 <nav className="bg-white dark:bg-dark_primary fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
   <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src={logo} className="h-8" alt="Logo"></img>
-      <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">marseltutors</span>
+      
+      <span className="self-center text-2xl font-semibold whitespace-nowrap block text-transparent bg-clip-text bg-gradient-to-r from-baby_blue via-peach to-baby_blue">marseltutors</span>
   </Link>
   <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
       <button onClick={toggleDarkMode}>
-      <div className="flex flex-col justify-center ml-3">
+      <div className="flex flex-col justify-center mx-3">
         <input type="checkbox" name="light-switch" className="light-switch sr-only" />
         <label className="relative cursor-pointer p-2">
             <svg className="dark:hidden" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
@@ -37,7 +36,7 @@ const Navbar: React.FC = () => {
         </label>
       </div>
       </button>
-      <Link to="https://calendly.com/marsel-tutors" target="_blank" rel="noopener noreferrer"  className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-dark-secondary dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      <Link to="https://calendly.com/marsel-tutors/meeting" target="_blank" rel="noopener noreferrer"  className="text-white bg-baby_blue hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-sm px-4 py-2 text-center dark:bg-dark-secondary dark:hover:bg-blue-700 dark:focus:ring-blue-800">
       Get started
       </Link>
       <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">

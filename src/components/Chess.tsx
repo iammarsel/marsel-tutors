@@ -6,22 +6,24 @@ const Chess: React.FC = () => {
   return (
     <>
     <Navbar />
-    <div className="flex flex-col mt-16 dark:bg-black text-black dark:text-white">
+    
+    <div className="flex flex-col mt-14 dark:bg-black text-black dark:text-white">
       {/* Full-width header image */}
       <div style={{maxHeight: '60vh'}}className="w-full overflow-hidden">
         <img src={ chess_banner } alt="Chess Banner" className="w-full h-auto" />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8 mx-4">
-        <div className="bg-yellow-200 p-4 rounded-lg shadow-md">
-          <h2 className="font-semibold text-lg">BEGINNER</h2>
+      <h1 className="text-center text-6xl font-semibold my-6">CHESS</h1>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 mx-4">
+        <div className="bg-yellow-200 p-4 rounded-lg shadow-md text-black">
+          <h2 className="font-semibold text-lg">Beginner</h2>
           <ul className="list-disc ml-4 mt-2">
             <li>basics of piece movement and checkmate</li>
             <li>puzzles and online games</li>
             <li>rating goal: 1000+</li>
           </ul>
         </div>
-        <div className="bg-yellow-400 p-4 rounded-lg shadow-md">
-          <h2 className="font-semibold text-lg">INTERMEDIATE</h2>
+        <div className="bg-yellow-400 p-4 rounded-lg shadow-md text-black">
+          <h2 className="font-semibold text-lg">Intermediate</h2>
           <ul className="list-disc ml-4 mt-2">
             <li>opening theory</li>
             <li>end game strategy</li>
@@ -29,8 +31,8 @@ const Chess: React.FC = () => {
             <li>rating goal: 1500+</li>
           </ul>
         </div>
-        <div className="bg-yellow-600 p-4 rounded-lg shadow-md">
-          <h2 className="font-semibold text-lg">ADVANCED</h2>
+        <div className="bg-yellow-600 p-4 rounded-lg shadow-md text-black">
+          <h2 className="font-semibold text-lg">Advanced</h2>
           <ul className="list-disc ml-4 mt-2">
             <li>tournament games analysis</li>
             <li>grandmaster history and games</li>
@@ -46,7 +48,7 @@ const Chess: React.FC = () => {
         <p>10 Lesson Pack $400 (Save $100)</p>
       </div>
       <div className="text-center my-8">
-      <Link to="https://calendly.com/marsel-tutors/chess" target="_blank" rel="noopener noreferrer" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" >
+      <Link to="https://calendly.com/marsel-tutors/meeting" target="_blank" rel="noopener noreferrer" className="bg-baby_blue hover:bg-blue-500 rounded-2xl text-white font-bold py-2 px-4 rounded" >
           Schedule Your First Lesson
       </Link>
       </div>

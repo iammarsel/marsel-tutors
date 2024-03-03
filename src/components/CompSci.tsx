@@ -20,18 +20,16 @@ const CompSci: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col mt-16 dark:bg-black text-black dark:text-white">
+      <div className="flex flex-col mt-14 dark:bg-black text-black dark:text-white">
         {/* Full-width header image */}
         <div style={{ maxHeight: '60vh' }} className="w-full overflow-hidden">
           <img src={compSciBanner} alt="CompSci Banner" className="w-full h-auto" />
         </div>
 
-        <div className="text-center my-8">
-          <h1 className="text-3xl font-bold text-blue-400">MASTERING PYTHON: 10 WEEK PROGRAM</h1>
-        </div>
+        <h1 className="text-center text-6xl font-semibold my-6">MASTERING PYTHON</h1>
 
         {/* Weekly Modules */}
-        <div className="flex flex-col my-8 mx-4">
+        <div className="flex flex-col mb-8 mx-4">
           {weeks.map((week, index) => (
             <div key={index} className="bg-yellow-200 text-black p-4 rounded-lg shadow-md mb-4">
               <h2 className="font-semibold text-lg">{week.title}</h2>
@@ -49,7 +47,7 @@ const CompSci: React.FC = () => {
           <p>10 Lesson Pack $400 (Save $100)</p>
         </div>
         <div className="text-center my-8">
-        <Link to="https://calendly.com/marsel-tutors/python" target="_blank" rel="noopener noreferrer" className="bg-yellow-300 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded">
+        <Link to="https://calendly.com/marsel-tutors/meeting" target="_blank" rel="noopener noreferrer" className="bg-baby_blue hover:bg-blue-500 rounded-2xl text-white font-bold py-2 px-4">
             Schedule Your First Lesson
         </Link>
         </div>

@@ -6,7 +6,7 @@ interface DarkModeContextType {
 }
 
 export const DarkModeContext = createContext<DarkModeContextType>({
-  darkMode: false,
+  darkMode: true,
   setDarkMode: () => {},
 });
 
@@ -15,7 +15,7 @@ interface DarkModeProviderProps {
 }
 
 export const DarkModeProvider: React.FC<DarkModeProviderProps> = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
     <DarkModeContext.Provider value={{ darkMode, setDarkMode }}>
