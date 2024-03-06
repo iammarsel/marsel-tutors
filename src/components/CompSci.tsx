@@ -20,7 +20,7 @@ const CompSci: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col mt-14 dark:bg-black text-black dark:text-white">
+      <div className="flex flex-col w-full h-full mt-14 dark:bg-black text-black dark:text-white">
         {/* Full-width header image */}
         <div style={{ maxHeight: '60vh' }} className="w-full overflow-hidden">
           <img src={compSciBanner} alt="CompSci Banner" className="w-full h-auto" />
@@ -51,7 +51,9 @@ const CompSci: React.FC = () => {
             Schedule Your First Lesson
         </Link>
         </div>
+        <p className='text-center text-lg py-4'>© 2024 Marsel Fetlyaev. All Rights Reserved. </p>
       </div>
+      
     </>
   );
 };

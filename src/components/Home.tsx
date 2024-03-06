@@ -15,23 +15,23 @@ const Home: React.FC = () => {
       <Navbar />
 
       {/* New welcome area div */}
-      <div className="flex justify-center items-center text-center h-full mx-4 ">
+      <div className="block lg:flex justify-center items-center text-center h-full mx-4 ">
         {/* Left side content */}
-        <div className="w-1/2 px-4 py-12">
-          <h1 className="text-6xl font-bold">Welcome to <span className='block text-transparent bg-clip-text bg-gradient-to-r from-baby_blue via-peach to-baby_blue'>marseltutors</span></h1>
-          <p className="text-lg my-8">Hi my name is Marsel, and I am a professional tutor. I have been tutoring professionally online for 3 years for a range of topics including Computer Science, Game Development, Chess, and more. Check out more details below, I hope you can find what you are looking for!</p>
+        <div className="w-full  px-4 py-12">
+          <h1 className="text-4xl mt-6 sm:text-6xl font-bold">Welcome to <span className='block text-transparent bg-clip-text bg-gradient-to-r from-baby_blue via-peach to-baby_blue'>marseltutors</span></h1>
+          <p className="text-md my-6">Hi my name is Marsel, I am a Software Developer and a professional tutor. Teaching has always been a passion of mine, and I would like to share the knowledge I've gathered over the years with new students! I have been tutoring professionally online for 4 years for a range of topics including Computer Science, Game Development, Chess, and more. Check out more details below, I hope you can find what you are looking for!</p>
           <Link className="bg-baby_blue rounded-2xl hover:bg-blue-500 text-white font-bold py-2 px-4" to="https://calendly.com/marsel-tutors/meeting" target="_blank" rel="noopener noreferrer" >
             Start Now
           </Link>
         </div>
 
         {/* Right side image */}
-        <div className="w-1/2 py-12 px-4">
+        <div className="w-full py-5 px-4">
           <img src={banner_img} alt="Learning Platform" />
         </div>
       </div>
 
-      <h1 className="text-center text-4xl font-semibold my-6">Choose Your Path</h1>
+      <h1 className="text-center text-3xl sm:text-4xl font-semibold my-6">Choose Your Path</h1>
 
 
       <div className="flex flex-wrap justify-center text-center mt-4">
@@ -62,7 +62,7 @@ const Home: React.FC = () => {
         
       </div>
 
-      <h1 className="text-center text-4xl mt-8 font-semibold my-6">Why MarselTutors</h1>
+      <h1 className="text-center text-3xl sm:text-4xl mt-8 font-semibold my-6">Why MarselTutors</h1>
       <p className="text-center text-lg my-4">Our tutors have several qualifications and experiences. Here are the current stats:</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 p-4 text-center">
@@ -89,7 +89,7 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <h1 className="text-center text-4xl font-semibold my-6">Client Satisfaction</h1>
+      <h1 className="text-center text-3xl sm:text-4xl font-semibold my-6">Client Satisfaction</h1>
       <div className="bg-gray-100 dark:bg-dark_primary p-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Box 1 */}
@@ -149,7 +149,7 @@ const Home: React.FC = () => {
         Start Now
       </Link>
       </div>
-      <p className='text-center text-lg py-4'>© 2024 Marsel Fetlyaev. All Rights Reserved. </p>
+      <p className='text-center text-lg py-4'>© 2024 MarselTutors. All Rights Reserved. </p>
     </div>
   );
 };

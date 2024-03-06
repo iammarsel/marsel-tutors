@@ -52,6 +52,7 @@ const Chess: React.FC = () => {
           Schedule Your First Lesson
       </Link>
       </div>
+      <p className='text-center text-lg py-4'>© 2024 MarselTutors. All Rights Reserved. </p>
     </div>
     </>
   );
