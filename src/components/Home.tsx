@@ -15,10 +15,10 @@ const Home: React.FC = () => {
       <Navbar />
 
       {/* New welcome area div */}
-      <div className="block lg:flex justify-center items-center text-center h-full mx-4 ">
+      <div className="block lg:flex h-screen justify-center items-center text-center mx-4 ">
         {/* Left side content */}
-        <div className="w-full  px-4 py-12">
-          <h1 className="text-4xl mt-6 sm:text-6xl font-bold">Welcome to <span className='block text-transparent bg-clip-text bg-gradient-to-r from-baby_blue via-peach to-baby_blue'>marseltutors</span></h1>
+        <div className="w-full px-4 py-12 ">
+          <h1 className="text-4xl sm:text-6xl font-bold">Welcome to <span className='block text-transparent bg-clip-text bg-gradient-to-r from-baby_blue via-peach to-baby_blue'>marseltutors</span></h1>
           <p className="text-md my-6">Hi my name is Marsel, I am a Software Developer and a professional tutor. Teaching has always been a passion of mine, and I would like to share the knowledge I've gathered over the years with new students! I have been tutoring professionally online for 4 years for a range of topics including Computer Science, Game Development, Chess, and more. Check out more details below, I hope you can find what you are looking for!</p>
           <Link className="bg-baby_blue rounded-2xl hover:bg-blue-500 text-white font-bold py-2 px-4" to="https://calendly.com/marsel-tutors/meeting" target="_blank" rel="noopener noreferrer" >
             Start Now
@@ -34,7 +34,7 @@ const Home: React.FC = () => {
       <h1 className="text-center text-3xl sm:text-4xl font-semibold my-6">Choose Your Path</h1>
 
 
-      <div className="flex flex-wrap justify-center text-center mt-4">
+      <div id="topics" className="flex flex-wrap justify-center text-center mt-4">
         <div className="flex flex-col items-center justify-start w-full sm:w-1/3 lg:w-1/5 bg-purple-500 text-white p-4 rounded-lg m-2">
           <p className="text-2xl mb-2 font-semibold">Secure Your First Internship</p>
           <p className="text-sm px-2 my-2 flex-grow">Learn how to built yourself up step-by-step professionally as a Computer Science student and secure your first internship for this summer!</p>
@@ -62,7 +62,7 @@ const Home: React.FC = () => {
         
       </div>
 
-      <h1 className="text-center text-3xl sm:text-4xl mt-8 font-semibold my-6">Why MarselTutors</h1>
+      <h1 id="experience" className="text-center text-3xl sm:text-4xl mt-8 font-semibold my-6">Why MarselTutors</h1>
       <p className="text-center text-lg my-4">Our tutors have several qualifications and experiences. Here are the current stats:</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 p-4 text-center">
@@ -89,7 +89,7 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <h1 className="text-center text-3xl sm:text-4xl font-semibold my-6">Client Satisfaction</h1>
+      <h1 id="reviews" className="text-center text-3xl sm:text-4xl font-semibold my-6">Client Satisfaction</h1>
       <div className="bg-gray-100 dark:bg-dark_primary p-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Box 1 */}

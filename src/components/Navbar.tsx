@@ -39,8 +39,24 @@ const Navbar: React.FC = () => {
       <Link to="https://calendly.com/marsel-tutors/meeting" target="_blank" rel="noopener noreferrer"  className="text-white bg-baby_blue hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-sm px-3 py-2 text-center dark:bg-dark-secondary dark:hover:bg-blue-700 dark:focus:ring-blue-800">
       Get started
       </Link>
+      <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false"></button>
   </div>
-  
+  <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+    <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:border-gray-700">
+      <li>
+        <a href="#" className="block py-2 px-3 text-black dark:text-white rounded md:bg-transparent md:p-0" aria-current="page">Home</a>
+      </li>
+      <li>
+        <a href="#topics" className="block py-2 px-3 text-black dark:text-white rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Topics</a>
+      </li>
+      <li>
+        <a href="#experience" className="block py-2 px-3 text-black dark:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Experience</a>
+      </li>
+      <li>
+        <a href="#reviews" className="block py-2 px-3 text-black dark:text-white rounded hover:bg-gray-100 md:hover:bg-transparen md:p-0 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Reviews</a>
+      </li>
+    </ul>
+  </div>
   </div>
 </nav>
 
