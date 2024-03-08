@@ -7,11 +7,12 @@ import game_img from '../assets/roblox.png';
 import tutor_img from '../assets/tutor.png';
 import web_img from '../assets/js.png';
 import chess_img from '../assets/chess.png';
-import avatar_img from '../assets/profile.png';
-import unity_img from '../assets/unity.png';
+import marcos from '../assets/marcos.png';
+import isaac from '../assets/isaac.png';
+import aleks from '../assets/aleks.png';
 const Home: React.FC = () => {
   return (
-    <div className='mt-10 text-black bg-white dark:text-white dark:bg-black'>
+    <div className='mt-10 text-dark_secondary bg-white dark:text-white dark:bg-dark_primary'>
       <Navbar />
 
       {/* New welcome area div */}
@@ -19,7 +20,7 @@ const Home: React.FC = () => {
         {/* Left side content */}
         <div className="w-full px-4 py-12 ">
           <h1 className="text-4xl sm:text-6xl font-bold">Welcome to <span className='block text-transparent bg-clip-text bg-gradient-to-r from-baby_blue via-peach to-baby_blue'>marseltutors</span></h1>
-          <p className="text-md my-6">Hi my name is Marsel, I am a Software Developer and a professional tutor. Teaching has always been a passion of mine, and I would like to share the knowledge I've gathered over the years with new students! I have been tutoring professionally online for 4 years for a range of topics including Computer Science, Game Development, Chess, and more. Check out more details below, I hope you can find what you are looking for!</p>
+          <p className="text-md my-6">Hi my name is Marsel, I am a Software Developer and a professional tutor. Teaching has always been a passion of mine, and I would like to share the knowledge I've gathered over the years with new students! I have been tutoring professionally online for 4 years for a range of topics including Computer Science, Web Development, Chess, and more. Check out more details below, I hope you can find what you are looking for!</p>
           <Link className="bg-baby_blue rounded-2xl hover:bg-blue-500 text-white font-bold py-2 px-4" to="https://calendly.com/marsel-tutors/meeting" target="_blank" rel="noopener noreferrer" >
             Start Now
           </Link>
@@ -30,11 +31,11 @@ const Home: React.FC = () => {
           <img src={banner_img} alt="Learning Platform" />
         </div>
       </div>
+      <div id="topics" className="block h-screen justify-center items-center text-center mx-auto max-w-8xl">
+      <h1 className="text-center text-3xl sm:text-4xl font-semibold my-12 pt-24">Choose Your Path</h1>
 
-      <h1 className="text-center text-3xl sm:text-4xl font-semibold my-6">Choose Your Path</h1>
 
-
-      <div id="topics" className="flex flex-wrap justify-center text-center mt-4">
+      <div  className="flex flex-wrap justify-center text-center mt-4">
         <div className="flex flex-col items-center justify-start w-full sm:w-1/3 lg:w-1/5 bg-purple-500 text-white p-4 rounded-lg m-2">
           <p className="text-2xl mb-2 font-semibold">Secure Your First Internship</p>
           <p className="text-sm px-2 my-2 flex-grow">Learn how to built yourself up step-by-step professionally as a Computer Science student and secure your first internship for this summer!</p>
@@ -62,43 +63,50 @@ const Home: React.FC = () => {
         
       </div>
 
-      <h1 id="experience" className="text-center text-3xl sm:text-4xl mt-8 font-semibold my-6">Why MarselTutors</h1>
+      </div>
+
+      <div id="experience" className="block h-screen justify-center items-center text-center mx-4 py-24">
+
+      <h1 className="text-center text-3xl sm:text-4xl font-semibold my-6 pt-48">Why MarselTutors</h1>
       <p className="text-center text-lg my-4">Our tutors have several qualifications and experiences. Here are the current stats:</p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 p-4 text-center">
-        <div className="skill-box flex flex-row items-center p-4 shadow-md rounded-lg shadow-slate-300 dark:bg-dark_primary">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 text-center mx-auto max-w-6xl">
+        <div className="skill-box flex flex-row items-center p-4 shadow-md rounded-lg shadow-slate-300 bg-gray-100 dark:bg-dark_secondary">
           <img src={python_img} alt="Python" className="w-16 h-16" />
-          <p className="ml-2 text-lg">5 years of Python development</p>
+          <p className="ml-2 text-lg">5 years of Python Development</p>
         </div>
-        <div className="skill-box flex flex-row items-center p-4 shadow-lg rounded-lg shadow-slate-300 dark:bg-dark_primary">
+        <div className="skill-box flex flex-row items-center p-4 shadow-lg rounded-lg shadow-slate-300 bg-gray-100 dark:bg-dark_secondary">
           <img src={game_img} alt="Roblox" className="w-16 h-16" />
-          <img src={unity_img} alt="Unity" className="w-16 h-16" />
           <p className="ml-2 text-lg">2 years of Game Development</p>
         </div>
-        <div className="skill-box flex flex-row items-center p-4 shadow-lg rounded-lg shadow-slate-300 dark:bg-dark_primary">
+        <div className="skill-box flex flex-row items-center p-4 shadow-lg rounded-lg shadow-slate-300 bg-gray-100 dark:bg-dark_secondary">
           <img src={tutor_img} alt="Tutor" className="w-16 h-16" />
-          <p className="ml-2 text-lg">4 years of professional Tutoring</p>
+          <p className="ml-2 text-lg">4 years of Professional Tutoring</p>
         </div>
-        <div className="skill-box flex flex-row items-center p-4 shadow-lg rounded-lg shadow-slate-300 dark:bg-dark_primary">
+        <div className="skill-box flex flex-row items-center p-4 shadow-lg rounded-lg shadow-slate-300 bg-gray-100 dark:bg-dark_secondary">
           <img src={web_img} alt="WebDev" className="w-16 h-16" />
           <p className="ml-2 text-lg">3 years of Web Development</p>
         </div>
-        <div className="skill-box flex flex-row items-center p-4 shadow-lg rounded-lg shadow-slate-300 dark:bg-dark_primary">
+        <div className="skill-box flex flex-row items-center p-4 shadow-lg rounded-lg shadow-slate-300 bg-gray-100 dark:bg-dark_secondary">
           <img src={chess_img} alt="Chess" className="w-16 h-16" />
-          <p className="ml-2 text-lg">2000+ chess rating</p>
+          <p className="ml-2 text-lg">2100+ Chess Rating</p>
         </div>
       </div>
 
-      <h1 id="reviews" className="text-center text-3xl sm:text-4xl font-semibold my-6">Client Satisfaction</h1>
+      </div>
+
+      <div id="reviews" className="block h-screen justify-center items-center text-center mx-4 py-24">
+
+      <h1 id="reviews" className="text-center text-3xl sm:text-4xl font-semibold my-6 mt-44">Client Satisfaction</h1>
       <div className="bg-gray-100 dark:bg-dark_primary p-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Box 1 */}
           <div className="flex flex-col items-center bg-gray-300 dark:bg-dark_secondary shadow rounded-lg p-4">
             <div className="flex items-center space-x-4">
-              <img src={avatar_img} alt="Marcos" className="w-16 h-16 object-cover rounded-full" />
-              <h3 className="text-lg font-bold">Marcos</h3>
+              <img src={isaac} alt="Marcos" className="w-16 h-16 object-cover rounded-full" />
+              <h3 className="text-lg font-bold">Isaac</h3>
             </div>
-            <p className="text-sm text-center mt-4">I love learning by making projects and games!</p>
+            <p className="text-sm text-center mt-4">I was Marsel's mentee for 6 months and he helped me secure my first Software Development Internship!</p>
             <div className="flex justify-center mt-4">
               {/* Repeat this for 5 stars */}
               {[...Array(5)].map((_, i) => (
@@ -111,7 +119,7 @@ const Home: React.FC = () => {
 
           <div className="flex flex-col items-center bg-gray-300 dark:bg-dark_secondary shadow rounded-lg p-4">
             <div className="flex items-center space-x-4">
-              <img src={avatar_img} alt="" className="w-16 h-16 object-cover rounded-full" />
+              <img src={aleks} alt="" className="w-16 h-16 object-cover rounded-full" />
               <h3 className="text-lg font-bold">Aleks</h3>
             </div>
             <p className="text-sm text-center mt-4">I was able to level up my chess game from Marsel’s lessons!</p>
@@ -127,10 +135,10 @@ const Home: React.FC = () => {
 
           <div className="flex flex-col items-center bg-gray-300 dark:bg-dark_secondary shadow rounded-lg p-4">
             <div className="flex items-center space-x-4">
-              <img src={avatar_img} alt="Marcos" className="w-16 h-16 object-cover rounded-full" />
-              <h3 className="text-lg font-bold">Josh</h3>
+              <img src={marcos} alt="Marcos" className="w-16 h-16 object-cover rounded-full" />
+              <h3 className="text-lg font-bold">Marcos</h3>
             </div>
-            <p className="text-sm text-center mt-4">I love playing Roblox games and now know how to make them!</p>
+            <p className="text-sm text-center mt-4">I love playing Roblox games and now know how to make my own!</p>
             <div className="flex justify-center mt-4">
               {/* Repeat this for 5 stars */}
               {[...Array(5)].map((_, i) => (
@@ -143,8 +151,9 @@ const Home: React.FC = () => {
 
         </div>
       </div>
+      </div>
       <div className='text-center mb-12'>
-      <h1 className="text-center text-2xl m-8">LIMITED TIME ONLY: GET YOUR FIRST LESSON FOR FREE IN ANY TOPIC YOU WANT TO LEARN</h1>
+      <h1 className="text-center text-2xl m-8 mt-24">LIMITED TIME ONLY: GET YOUR FIRST LESSON FOR FREE IN ANY TOPIC YOU WANT TO LEARN</h1>
       <Link className="bg-baby_blue rounded-xl hover:bg-blue-500 text-white font-bold py-2 px-4" to="https://calendly.com/marsel-tutors/meeting">
         Start Now
       </Link>

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { DarkModeContext } from '../DarkModeContext';
-const Navbar: React.FC = () => {
+const Navbar2: React.FC = () => {
   const { darkMode, setDarkMode } = useContext(DarkModeContext);
 
   const toggleDarkMode = () => {
@@ -40,22 +40,7 @@ const Navbar: React.FC = () => {
       Get started
       </Link>
   </div>
-  <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-    <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:border-gray-700">
-      <li>
-        <a href="#" className="block py-2 px-3 text-black dark:text-white rounded md:bg-transparent md:p-0" aria-current="page">Home</a>
-      </li>
-      <li>
-        <a href="#topics" className="block py-2 px-3 text-black dark:text-white rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Topics</a>
-      </li>
-      <li>
-        <a href="#experience" className="block py-2 px-3 text-black dark:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Experience</a>
-      </li>
-      <li>
-        <a href="#reviews" className="block py-2 px-3 text-black dark:text-white rounded hover:bg-gray-100 md:hover:bg-transparen md:p-0 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Reviews</a>
-      </li>
-    </ul>
-  </div>
+
   </div>
 </nav>
 
@@ -63,4 +48,4 @@ const Navbar: React.FC = () => {
   );
 };
 
-export default Navbar;
+export default Navbar2;

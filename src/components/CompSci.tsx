@@ -1,6 +1,6 @@
 import React from 'react';
 import compSciBanner from '../assets/python_banner.png'; // Ensure you have a banner image for CompSci
-import Navbar from './Navbar';
+import Navbar2 from './Navbar2';
 import { Link } from 'react-router-dom';
 
 const CompSci: React.FC = () => {
@@ -19,8 +19,8 @@ const CompSci: React.FC = () => {
 
   return (
     <>
-      <Navbar />
-      <div className="flex flex-col w-full h-full mt-14 dark:bg-black text-black dark:text-white">
+      <Navbar2 />
+      <div className="flex flex-col w-full h-full mt-14 dark:bg-dark_primary text-dark_secondary dark:text-white">
         {/* Full-width header image */}
         <div style={{ maxHeight: '60vh' }} className="w-full overflow-hidden">
           <img src={compSciBanner} alt="CompSci Banner" className="w-full h-auto" />
@@ -29,15 +29,15 @@ const CompSci: React.FC = () => {
         <h1 className="text-center text-6xl font-semibold my-6">MASTERING PYTHON</h1>
 
         {/* Weekly Modules */}
-        <div className="flex flex-col mb-8 mx-4">
+        <div className="max-w-2xl mx-auto p-6 shadow-lg rounded-lg text-center shadow-slate-300">
           {weeks.map((week, index) => (
-            <div key={index} className="bg-yellow-200 text-black p-4 rounded-lg shadow-md mb-4">
+            <div key={index} className="bg-yellow-200 text-dark_secondary p-4 rounded-lg shadow-md mb-4">
               <h2 className="font-semibold text-lg">{week.title}</h2>
               <p className="mt-2"><strong>Focus:</strong> {week.focus}</p>
               <p className="mt-1"><strong>Project:</strong> {week.project}</p>
             </div>
           ))}
-        </div>
+        
 
         {/* Pricing and Call to Action */}
         <div className="text-center font-bold mb-4">
@@ -46,11 +46,13 @@ const CompSci: React.FC = () => {
           <p>1 Lesson = $50</p>
           <p>10 Lesson Pack $400 (Save $100)</p>
         </div>
+        </div>
         <div className="text-center my-8">
         <Link to="https://calendly.com/marsel-tutors/meeting" target="_blank" rel="noopener noreferrer" className="bg-baby_blue hover:bg-blue-500 rounded-2xl text-white font-bold py-2 px-4">
             Schedule Your First Lesson
         </Link>
         </div>
+        
         <p className='text-center text-lg py-4'>© 2024 Marsel Fetlyaev. All Rights Reserved. </p>
       </div>
       
