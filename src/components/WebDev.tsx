@@ -43,8 +43,8 @@ const WebDev: React.FC = () => {
         <div className="text-center font-bold mb-4">
           <h2 className="text-2xl">PRICING</h2>
           <p className="mb-2">EXCLUSIVE OFFER: ENROLL IN WEB DEVELOPMENT AND GET A DISCOUNT ON ADVANCED MODULES</p>
-          <p>1 Lesson = $60</p>
-          <p>10 Lesson Pack $500 (Save $100)</p>
+          <p>1 Lesson = $50</p>
+          <p>10 Lesson Pack $400 (Save $100)</p>
         </div>
         </div>
         <div className="text-center my-8">
