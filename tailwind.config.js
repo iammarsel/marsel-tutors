@@ -8,8 +8,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        baby_blue: '#2BC6E9',
-        peach: '#FFCF52',
+        baby_blue: '#820000',
+        peach: '#CF9B67',
         secondary: '#1b2720',
         dark_primary: '#121212',
         dark_secondary: '#262626',

@@ -1,5 +1,5 @@
 import React from 'react';
-import chess_banner from '../assets/chess_banner.png';
+import chess_banner from '../assets/img9.jpg';
 import Navbar2 from './Navbar2';
 import { Link } from 'react-router-dom';
 const Chess: React.FC = () => {

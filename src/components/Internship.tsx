@@ -1,5 +1,5 @@
 import React from 'react';
-import internshipBanner from '../assets/internship_banner.png'; // Ensure you have a banner image for Game Development
+import internshipBanner from '../assets/img6.jpg'; // Ensure you have a banner image for Game Development
 import Navbar from './Navbar2';
 import { Link } from 'react-router-dom';
 
