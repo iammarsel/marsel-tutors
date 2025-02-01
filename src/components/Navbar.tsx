@@ -14,12 +14,29 @@ const Navbar: React.FC = () => {
     
 
 <nav className="bg-gray-100 dark:bg-dark_secondary fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
-  <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-      
-      <span className="self-center text-2xl font-semibold whitespace-nowrap block text-transparent bg-clip-text bg-gradient-to-r from-baby_blue via-peach to-baby_blue">marseltutors</span>
+  <div className="max-w-screen-xl flex items-center justify-between mx-auto p-3">
+
+  <Link to="/" className="flex items-center">
+      <span className="self-center text-2xl font-semibold whitespace-nowrap block text-transparent bg-clip-text bg-gradient-to-r from-baby_blue via-peach to-baby_blue">
+        marseltutors
+      </span>
   </Link>
-  <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+  
+  <div className="flex-1 hidden md:flex justify-center">
+    <ul className="flex space-x-8 font-medium">
+      <li>
+        <a href="#" className="text-black dark:text-white md:bg-transparent" aria-current="page">About</a>
+      </li>
+      <li>
+        <a href="#topics" className="text-black dark:text-white hover:bg-gray-100 md:hover:bg-transparent dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+      </li>
+      <li>
+        <a href="#reviews" className="text-black dark:text-white hover:bg-gray-100 md:hover:bg-transparent dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Testimonials</a>
+      </li>
+    </ul>
+  </div>
+
+  <div className="flex items-center space-x-4">
       <button onClick={toggleDarkMode}>
       <div className="flex flex-col justify-center mx-3">
         <input type="checkbox" name="light-switch" className="light-switch sr-only" />
@@ -36,26 +53,14 @@ const Navbar: React.FC = () => {
         </label>
       </div>
       </button>
-      <Link to="https://calendly.com/marsel-tutors/meeting" target="_blank" rel="noopener noreferrer"  className="text-white bg-baby_blue hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-sm px-3 py-2 text-center dark:bg-dark-secondary dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-      Get started
+      <Link to="https://calendly.com/marsel-tutors/meeting" target="_blank" rel="noopener noreferrer"  className="text-white bg-baby_blue hover:bg-peach focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-sm px-3 py-2 text-center dark:bg-dark-secondary">
+      Schedule Lesson
+      </Link>
+      <Link to="https://calendly.com/marsel-tutors/meeting" target="_blank" rel="noopener noreferrer"  className="text-white bg-peach hover:bg-baby_blue focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-sm px-3 py-2 text-center dark:bg-dark-secondary">
+      Resume Review
       </Link>
   </div>
-  <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-    <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:border-gray-700">
-      <li>
-        <a href="#" className="block py-2 px-3 text-black dark:text-white rounded md:bg-transparent md:p-0" aria-current="page">Home</a>
-      </li>
-      <li>
-        <a href="#topics" className="block py-2 px-3 text-black dark:text-white rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Topics</a>
-      </li>
-      <li>
-        <a href="#experience" className="block py-2 px-3 text-black dark:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Experience</a>
-      </li>
-      <li>
-        <a href="#reviews" className="block py-2 px-3 text-black dark:text-white rounded hover:bg-gray-100 md:hover:bg-transparen md:p-0 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Reviews</a>
-      </li>
-    </ul>
-  </div>
+
   </div>
 </nav>
 

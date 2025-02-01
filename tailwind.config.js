@@ -10,6 +10,7 @@ export default {
       colors: {
         baby_blue: '#820000',
         peach: '#CF9B67',
+        purp: '#5F4B8B',
         secondary: '#1b2720',
         dark_primary: '#121212',
         dark_secondary: '#262626',

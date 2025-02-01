@@ -2,16 +2,10 @@ import React from 'react';
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
 import banner_img from '../assets/img7.jpg';
-import python_img from '../assets/python.png';
-import game_img from '../assets/roblox.png';
-import tutor_img from '../assets/tutor.png';
-import web_img from '../assets/js.png';
-import chess_img from '../assets/chess.png';
 import marcos from '../assets/marcos.png';
 import isaac from '../assets/isaac.png';
 import aleks from '../assets/aleks.png';
-import offer_img from '../assets/offer.png';
-
+import swan from '../assets/swan.jpg';
 const Home: React.FC = () => {
   return (
     <div className="text-dark_secondary bg-white dark:text-white dark:bg-dark_primary">
@@ -42,12 +36,12 @@ const Home: React.FC = () => {
             From coding skills to career growth to chess, the resources are worth your time!
           </p>
           <Link
-            className="inline-block bg-baby_blue rounded-2xl hover:bg-blue-500 text-white font-bold py-2 px-6"
+            className="inline-block bg-baby_blue rounded-2xl hover:bg-peach text-white font-bold py-2 px-6"
             to="https://calendly.com/marsel-tutors/meeting"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Start Now
+             Learn More
           </Link>
         </div>
       </section>
@@ -121,14 +115,80 @@ const Home: React.FC = () => {
 
       {/* Reviews Section */}
       <section id="reviews" className="py-20 mx-auto max-w-7xl px-4">
-        <h2 className="text-center text-3xl sm:text-4xl font-semibold mb-6">Client Satisfaction</h2>
+        <h2 className="text-center text-3xl sm:text-4xl font-semibold mb-6">Testimonials</h2>
+        <h2 className="text-center text-md sm:text-xl mb-6">How Students Learned and Succeeded</h2>
         <div className="bg-gray-100 dark:bg-dark_primary p-6 rounded-lg">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+          <div className="flex flex-col items-center bg-gray-300 dark:bg-dark_secondary shadow rounded-lg p-4">
+              <div className="flex flex-col items-center">
+                <img src={marcos} alt="Marcos" className="w-16 h-16 object-cover rounded-full" />
+                <h3 className="text-lg font-bold">Marcos Condori</h3>
+                <h3 className="text-sm text-peach">Python and Roblox Developer</h3>
+              </div>
+              <p className="text-sm text-center mt-4">
+                I love playing Roblox games and now know how to make my own!
+              </p>
+              <div className="flex justify-center mt-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg
+                    key={i}
+                    className="w-6 h-6 text-yellow-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path d="M9.049 2.927c.396-0.802 1.556-0.802 1.952 0l1.286 2.611 
+                      2.88 0.419c.672 0.097 0.94 0.926 0.454 1.394l-2.083 
+                      2.03 0.49 2.85c.113 0.66-.578 1.166-1.158 
+                      0.854l-2.563-1.347-2.563 1.347c-.58 
+                      0.312-1.271-0.194-1.158-0.854l0.49-2.85-2.083-2.03
+                      c-.486-0.468-0.218-1.297 0.454-1.394l2.88-0.419 
+                      1.286-2.611z"
+                    />
+                  </svg>
+                ))}
+              </div>
+              </div>
+            
+              <div className="flex flex-col items-center bg-gray-300 dark:bg-dark_secondary shadow rounded-lg p-4">
+              <div className="flex flex-col items-center">
+                <img src={swan} alt="Marcos" className="w-16 h-16 object-cover rounded-full" />
+                <h3 className="text-lg font-bold">Swan Thurein</h3>
+                <h3 className="text-sm text-peach">SWE Intern at Wells Fargo</h3>
+              </div>
+              <p className="text-sm text-center mt-4">
+                I love playing Roblox games and now know how to make my own!
+              </p>
+              <div className="flex justify-center mt-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg
+                    key={i}
+                    className="w-6 h-6 text-yellow-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path d="M9.049 2.927c.396-0.802 1.556-0.802 1.952 0l1.286 2.611 
+                      2.88 0.419c.672 0.097 0.94 0.926 0.454 1.394l-2.083 
+                      2.03 0.49 2.85c.113 0.66-.578 1.166-1.158 
+                      0.854l-2.563-1.347-2.563 1.347c-.58 
+                      0.312-1.271-0.194-1.158-0.854l0.49-2.85-2.083-2.03
+                      c-.486-0.468-0.218-1.297 0.454-1.394l2.88-0.419 
+                      1.286-2.611z"
+                    />
+                  </svg>
+                ))}
+              </div>
+              </div>
+
             {/* Review Box 1 */}
             <div className="flex flex-col items-center bg-gray-300 dark:bg-dark_secondary shadow rounded-lg p-4">
-              <div className="flex items-center space-x-4">
+              <div className="flex flex-col items-center">
                 <img src={isaac} alt="Isaac" className="w-16 h-16 object-cover rounded-full" />
-                <h3 className="text-lg font-bold">Isaac</h3>
+                <h3 className="text-lg font-bold">Isaac Powell</h3>
+                <h3 className="text-sm text-peach">SWE Intern at JPMorganChase</h3>
+                
               </div>
               <p className="text-sm text-center mt-4">
                 I was Marsel's mentee for 6 months and he helped me secure my first Software Development Internship!
@@ -157,9 +217,10 @@ const Home: React.FC = () => {
 
             {/* Review Box 2 */}
             <div className="flex flex-col items-center bg-gray-300 dark:bg-dark_secondary shadow rounded-lg p-4">
-              <div className="flex items-center space-x-4">
+              <div className="flex flex-col items-center">
                 <img src={aleks} alt="Aleks" className="w-16 h-16 object-cover rounded-full" />
-                <h3 className="text-lg font-bold">Aleks</h3>
+                <h3 className="text-lg font-bold">Aleks Fetlyaev</h3>                
+                <h3 className="text-sm text-peach">Professional Chess Player</h3>
               </div>
               <p className="text-sm text-center mt-4">
                 I was able to level up my chess game from Marsel’s lessons!
@@ -185,67 +246,7 @@ const Home: React.FC = () => {
                 ))}
               </div>
             </div>
-
-            {/* Review Box 3 */}
-            <div className="flex flex-col items-center bg-gray-300 dark:bg-dark_secondary shadow rounded-lg p-4">
-              <div className="flex items-center space-x-4">
-                <img src={marcos} alt="Marcos" className="w-16 h-16 object-cover rounded-full" />
-                <h3 className="text-lg font-bold">Marcos</h3>
-              </div>
-              <p className="text-sm text-center mt-4">
-                I love playing Roblox games and now know how to make my own!
-              </p>
-              <div className="flex justify-center mt-4">
-                {[...Array(5)].map((_, i) => (
-                  <svg
-                    key={i}
-                    className="w-6 h-6 text-yellow-500"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path d="M9.049 2.927c.396-0.802 1.556-0.802 1.952 0l1.286 2.611 
-                      2.88 0.419c.672 0.097 0.94 0.926 0.454 1.394l-2.083 
-                      2.03 0.49 2.85c.113 0.66-.578 1.166-1.158 
-                      0.854l-2.563-1.347-2.563 1.347c-.58 
-                      0.312-1.271-0.194-1.158-0.854l0.49-2.85-2.083-2.03
-                      c-.486-0.468-0.218-1.297 0.454-1.394l2.88-0.419 
-                      1.286-2.611z"
-                    />
-                  </svg>
-                ))}
-              </div>
-              </div>
-              {/* Review Box 3 */}
-            <div className="flex flex-col items-center bg-gray-300 dark:bg-dark_secondary shadow rounded-lg p-4">
-              <div className="flex items-center space-x-4">
-                <img src={marcos} alt="Marcos" className="w-16 h-16 object-cover rounded-full" />
-                <h3 className="text-lg font-bold">Marcos</h3>
-              </div>
-              <p className="text-sm text-center mt-4">
-                I love playing Roblox games and now know how to make my own!
-              </p>
-              <div className="flex justify-center mt-4">
-                {[...Array(5)].map((_, i) => (
-                  <svg
-                    key={i}
-                    className="w-6 h-6 text-yellow-500"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path d="M9.049 2.927c.396-0.802 1.556-0.802 1.952 0l1.286 2.611 
-                      2.88 0.419c.672 0.097 0.94 0.926 0.454 1.394l-2.083 
-                      2.03 0.49 2.85c.113 0.66-.578 1.166-1.158 
-                      0.854l-2.563-1.347-2.563 1.347c-.58 
-                      0.312-1.271-0.194-1.158-0.854l0.49-2.85-2.083-2.03
-                      c-.486-0.468-0.218-1.297 0.454-1.394l2.88-0.419 
-                      1.286-2.611z"
-                    />
-                  </svg>
-                ))}
-              </div>
-              </div>
+            
           </div>
         </div>
       </section>
@@ -253,19 +254,19 @@ const Home: React.FC = () => {
       {/* Limited Time Offer Section */}
       <section className="py-20 text-center px-4">
         <h2 className="text-center text-3xl sm:text-4xl font-semibold mb-6">
-          LIMITED TIME ONLY: GET YOUR FIRST LESSON FOR FREE
+          Find Out More Over a Free Introduction Call
         </h2>
         <Link
           className="bg-baby_blue rounded-xl hover:bg-blue-500 text-white font-bold py-2 px-4"
           to="https://calendly.com/marsel-tutors/meeting"
         >
-          Start Now
+          Schedule Your Lesson
         </Link>
       </section>
 
       {/* Footer */}
       <footer className="text-center text-lg py-6 border-t border-gray-200 dark:border-gray-700">
-        © 2024 MarselTutors. All Rights Reserved.
+        © 2025 MarselTutors. All Rights Reserved.
       </footer>
     </div>
   );
