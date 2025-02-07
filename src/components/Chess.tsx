@@ -8,12 +8,60 @@ const Chess: React.FC = () => {
     <Navbar2 />
     
     <div className="flex flex-col mt-14 dark:bg-dark_primary text-dark_secondary dark:text-white">
-      {/* Full-width header image */}
-      <div style={{maxHeight: '60vh'}}className="w-full overflow-hidden">
-        <img src={ chess_banner } alt="Chess Banner" className="w-full h-auto" />
-      </div>
-      <h1 className="text-center text-6xl font-semibold my-6">CHESS</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 mx-4">
+      
+
+    
+        {/* =========================================
+            MOBILE HERO (below md)
+        ========================================= */}
+        <div className="block md:hidden">
+          <div className="relative w-full">
+            {/* Mobile hero image with gradient overlay */}
+            <div className="relative">
+              <img
+                src={chess_banner}
+                alt="Software Development Banner"
+                className="w-full h-auto"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-100" />
+            </div>
+            {/* Title overlay in the center */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center">
+              <h1 className="text-gray-100 text-4xl sm:text-6xl font-bold drop-shadow-md text-center px-4">
+                CHESS
+              </h1>
+              <h3 className="text-gray-300 mt-4 text-sm">
+                Game Analysis, Strategy, and Tactics
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        {/* =========================================
+            DESKTOP HERO (md and up)
+        ========================================= */}
+        <div className="hidden md:flex w-full">
+          {/* Left side: text content */}
+          <div className="md:w-1/2 flex flex-col justify-center p-8">
+            <h1 className="text-5xl font-extrabold text-brand_secondary dark:text-brand_secondary mb-4">
+              CHESS
+            </h1>
+            <h3 className="text-lg text-gray-600 dark:text-gray-200">
+              Game analysis, strategy, and tactics
+            </h3>
+          </div>
+          
+          {/* Right side: image */}
+          <div className="md:w-1/2">
+            <img
+              src={chess_banner}
+              alt="Chess Banner"
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        </div>
+        
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8 mx-4">
         <div className="bg-yellow-200 p-4 rounded-lg shadow-md text-dark_secondary">
           <h2 className="font-semibold text-lg">Beginner</h2>
           <ul className="list-disc ml-4 mt-2">
@@ -48,11 +96,11 @@ const Chess: React.FC = () => {
         <p>10 Lesson Pack $400 (Save $100)</p>
       </div>
       <div className="text-center my-8">
-      <Link to="https://calendly.com/marsel-tutors/meeting" target="_blank" rel="noopener noreferrer" className="bg-baby_blue hover:bg-blue-500 rounded-2xl text-white font-bold py-2 px-4 rounded" >
+      <Link to="https://calendly.com/marsel-tutors/meeting" target="_blank" rel="noopener noreferrer" className="bg-brand_secondary hover:bg-blue-500 rounded-2xl text-white font-bold py-2 px-4 rounded" >
           Schedule Your First Lesson
       </Link>
       </div>
-      <p className='text-center text-lg py-4'>© 2024 MarselTutors. All Rights Reserved. </p>
+      <p className='text-center text-lg py-4'>© 2025 MarselTutors. All Rights Reserved. </p>
     </div>
     </>
   );

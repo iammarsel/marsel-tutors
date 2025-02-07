@@ -17,7 +17,7 @@ const Navbar2: React.FC = () => {
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
   <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
       
-      <span className="self-center text-2xl font-semibold whitespace-nowrap block text-transparent bg-clip-text bg-gradient-to-r from-baby_blue via-peach to-baby_blue">marseltutors</span>
+      <span className="self-center text-2xl font-semibold whitespace-nowrap block text-transparent bg-clip-text bg-gradient-to-r from-brand_primary via-brand_secondary to-brand_primary">marseltutors</span>
   </Link>
   <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
       <button onClick={toggleDarkMode}>
@@ -36,8 +36,8 @@ const Navbar2: React.FC = () => {
         </label>
       </div>
       </button>
-      <Link to="https://calendly.com/marsel-tutors/meeting" target="_blank" rel="noopener noreferrer"  className="text-white bg-baby_blue hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-sm px-3 py-2 text-center dark:bg-dark-secondary dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-      Get started
+      <Link to="https://calendly.com/marsel-tutors/meeting" target="_blank" rel="noopener noreferrer"  className="text-white bg-brand_primary hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-sm px-3 py-2 text-center dark:bg-dark-secondary dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      Schedule Lesson
       </Link>
   </div>
 

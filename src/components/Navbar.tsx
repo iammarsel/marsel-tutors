@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
   <div className="max-w-screen-xl flex items-center justify-between mx-auto p-3">
 
   <Link to="/" className="flex items-center">
-      <span className="self-center text-2xl font-semibold whitespace-nowrap block text-transparent bg-clip-text bg-gradient-to-r from-baby_blue via-peach to-baby_blue">
+      <span className="self-center text-2xl font-semibold whitespace-nowrap block text-transparent bg-clip-text bg-gradient-to-r from-brand_primary via-brand_secondary to-brand_primary">
         marseltutors
       </span>
   </Link>
@@ -53,10 +53,10 @@ const Navbar: React.FC = () => {
         </label>
       </div>
       </button>
-      <Link to="https://calendly.com/marsel-tutors/meeting" target="_blank" rel="noopener noreferrer"  className="text-white bg-baby_blue hover:bg-peach focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-sm px-3 py-2 text-center dark:bg-dark-secondary">
+      <Link to="https://calendly.com/marsel-tutors/meeting" target="_blank" rel="noopener noreferrer"  className="text-white bg-brand_primary hover:bg-brand_secondary focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-sm px-3 py-2 text-center dark:bg-dark-secondary">
       Schedule Lesson
       </Link>
-      <Link to="https://calendly.com/marsel-tutors/meeting" target="_blank" rel="noopener noreferrer"  className="text-white bg-peach hover:bg-baby_blue focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-sm px-3 py-2 text-center dark:bg-dark-secondary">
+      <Link to="https://calendly.com/marsel-tutors/meeting" target="_blank" rel="noopener noreferrer"  className="text-white bg-brand_secondary hover:bg-brand_primary focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-sm px-3 py-2 text-center dark:bg-dark-secondary">
       Resume Review
       </Link>
   </div>

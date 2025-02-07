@@ -1,5 +1,5 @@
 import React from 'react';
-import internshipBanner from '../assets/img6.jpg'; // Ensure you have a banner image for Game Development
+import internshipBanner from '../assets/img11.png'; // Ensure you have a banner image for Game Development
 import Navbar from './Navbar2';
 import { Link } from 'react-router-dom';
 
@@ -14,7 +14,7 @@ const GameDev: React.FC = () => {
         </div>
 
         <div className="text-center my-8">
-          <h1 className="text-3xl font-bold text-peach">SECURE YOUR FIRST INTERNSHIP IN SOFTWARE DEVELOPMENT</h1>
+          <h1 className="text-3xl font-bold text-brand_secondary">SECURE YOUR FIRST INTERNSHIP IN SOFTWARE DEVELOPMENT</h1>
         </div>
 
         <div className="max-w-lg mx-auto p-6 shadow-lg rounded-lg text-center shadow-slate-300">
@@ -35,7 +35,7 @@ const GameDev: React.FC = () => {
             Enroll in Internship Mentorship
         </Link>
         </div>
-        <p className='text-center text-lg py-4'>© 2024 MarselTutors. All Rights Reserved. </p>
+        <p className='text-center text-lg py-4'>© 2025 MarselTutors. All Rights Reserved. </p>
       </div>
       
     </>

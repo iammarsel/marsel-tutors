@@ -27,7 +27,7 @@ const Home: React.FC = () => {
         <div className="relative z-10 mx-auto px-4 max-w-2xl text-white py-16 sm:py-24">
           <h1 className="text-4xl sm:text-6xl font-bold mb-6">
             Welcome to
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-baby_blue via-peach to-baby_blue">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-brand_primary via-brand_secondary to-brand_primary">
               marseltutors
             </span>
           </h1>
@@ -36,7 +36,7 @@ const Home: React.FC = () => {
             From coding skills to career growth to chess, the resources are worth your time!
           </p>
           <Link
-            className="inline-block bg-baby_blue rounded-2xl hover:bg-peach text-white font-bold py-2 px-6"
+            className="inline-block bg-brand_primary rounded-2xl hover:bg-brand_secondary text-white font-bold py-2 px-6"
             to="https://calendly.com/marsel-tutors/meeting"
             target="_blank"
             rel="noopener noreferrer"
@@ -48,8 +48,8 @@ const Home: React.FC = () => {
 
       {/* Choose Your Path Section */}
       <section id="topics" className="py-20 mx-auto max-w-7xl px-4">
-        <h2 className="text-center text-3xl sm:text-4xl font-semibold mb-12">Choose Your Path</h2>
-        
+        <h2 className="text-center text-3xl sm:text-4xl font-semibold mb-6">Choose Your Path</h2>
+        <h2 className="text-center text-md sm:text-xl mb-6">3 Topics with Customizable Paths to Fit Your Needs</h2>
         <div className="flex flex-wrap justify-center text-center">
           {/* Box 1 */}
           <div className="flex flex-col items-center w-full sm:w-1/3 lg:w-1/5 bg-purple-700 text-white p-4 rounded-lg m-2">
@@ -66,26 +66,24 @@ const Home: React.FC = () => {
             </Link>
           </div>
 
-          {/* Box 2 */}
-          <div className="flex flex-col items-center w-full sm:w-1/3 lg:w-1/5 bg-green-600 text-white p-4 rounded-lg m-2">
-            <p className="text-2xl mb-2 font-semibold">Mastering Python</p>
+          <div className="flex flex-col items-center w-full sm:w-1/3 lg:w-1/5 bg-blue-600 text-white p-4 rounded-lg m-2">
+            <p className="text-2xl mb-2 font-semibold">Software Development</p>
             <p className="text-sm px-2 my-2 flex-grow">
-              Master Computer Science fundamentals using trending technologies in the industry.
-              Start with Python projects and apply what you learn to any aspect of development!
+             Build a project from start to finish with different technologies: Python, JavaScript, SQL, AWS, and much more
             </p>
             <Link
-              className="inline-block bg-white text-green-500 hover:bg-green-800 hover:text-white text-lg font-semibold py-2 px-4 mt-2 rounded-full transition duration-300 ease-in-out"
-              to="/python"
+              className="inline-block bg-white text-blue-500 hover:bg-blue-800 hover:text-white text-lg font-semibold py-2 px-4 mt-2 rounded-full transition duration-300 ease-in-out"
+              to="/software"
             >
               Learn More
             </Link>
           </div>
 
-          {/* Box 3 */}
-          <div className="flex flex-col items-center w-full sm:w-1/3 lg:w-1/5 bg-orange-600 text-white p-4 rounded-lg m-2">
+                 {/* Box 3 */}
+                 <div className="flex flex-col items-center w-full sm:w-1/3 lg:w-1/5 bg-orange-600 text-white p-4 rounded-lg m-2">
             <p className="text-2xl mb-2 font-semibold">Chess</p>
             <p className="text-sm px-2 my-2 flex-grow">
-              Learn how to play chess and compete in professional games. Choose a path from beginner
+              Learn how to play chess from a professional; Choose a path from beginner
               to advanced, learning the fundamentals, theory, puzzles, and much more!
             </p>
             <Link
@@ -96,20 +94,6 @@ const Home: React.FC = () => {
             </Link>
           </div>
 
-          {/* Box 4 */}
-          <div className="flex flex-col items-center w-full sm:w-1/3 lg:w-1/5 bg-blue-600 text-white p-4 rounded-lg m-2">
-            <p className="text-2xl mb-2 font-semibold">Software Development</p>
-            <p className="text-sm px-2 my-2 flex-grow">
-              Learn how to develop and deploy your own website with HTML, CSS, and JavaScript, 
-              as well as a popular framework known as ReactJS, with projects such as a personal portfolio!
-            </p>
-            <Link
-              className="inline-block bg-white text-blue-500 hover:bg-blue-800 hover:text-white text-lg font-semibold py-2 px-4 mt-2 rounded-full transition duration-300 ease-in-out"
-              to="/web-dev"
-            >
-              Learn More
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -124,7 +108,7 @@ const Home: React.FC = () => {
               <div className="flex flex-col items-center">
                 <img src={marcos} alt="Marcos" className="w-16 h-16 object-cover rounded-full" />
                 <h3 className="text-lg font-bold">Marcos Condori</h3>
-                <h3 className="text-sm text-peach">Python and Roblox Developer</h3>
+                <h3 className="text-sm text-brand_secondary">Python and Roblox Developer</h3>
               </div>
               <p className="text-sm text-center mt-4">
                 I love playing Roblox games and now know how to make my own!
@@ -155,10 +139,10 @@ const Home: React.FC = () => {
               <div className="flex flex-col items-center">
                 <img src={swan} alt="Marcos" className="w-16 h-16 object-cover rounded-full" />
                 <h3 className="text-lg font-bold">Swan Thurein</h3>
-                <h3 className="text-sm text-peach">SWE Intern at Wells Fargo</h3>
+                <h3 className="text-sm text-brand_secondary">SWE Intern at Wells Fargo</h3>
               </div>
               <p className="text-sm text-center mt-4">
-                I love playing Roblox games and now know how to make my own!
+              Marsel helped me get started with my own projects—something I really struggled with before. I didn’t know where to begin or how to finish, but his guidance made a lot of difference. He also gave me great tips for making my resume internship-ready, which helped me land my first internship at Wells Fargo. Super grateful for his help!
               </p>
               <div className="flex justify-center mt-4">
                 {[...Array(5)].map((_, i) => (
@@ -187,7 +171,7 @@ const Home: React.FC = () => {
               <div className="flex flex-col items-center">
                 <img src={isaac} alt="Isaac" className="w-16 h-16 object-cover rounded-full" />
                 <h3 className="text-lg font-bold">Isaac Powell</h3>
-                <h3 className="text-sm text-peach">SWE Intern at JPMorganChase</h3>
+                <h3 className="text-sm text-brand_secondary">SWE Intern at JPMorganChase</h3>
                 
               </div>
               <p className="text-sm text-center mt-4">
@@ -220,7 +204,7 @@ const Home: React.FC = () => {
               <div className="flex flex-col items-center">
                 <img src={aleks} alt="Aleks" className="w-16 h-16 object-cover rounded-full" />
                 <h3 className="text-lg font-bold">Aleks Fetlyaev</h3>                
-                <h3 className="text-sm text-peach">Professional Chess Player</h3>
+                <h3 className="text-sm text-brand_secondary">Professional Chess Player</h3>
               </div>
               <p className="text-sm text-center mt-4">
                 I was able to level up my chess game from Marsel’s lessons!
@@ -253,11 +237,11 @@ const Home: React.FC = () => {
 
       {/* Limited Time Offer Section */}
       <section className="py-20 text-center px-4">
-        <h2 className="text-center text-3xl sm:text-4xl font-semibold mb-6">
+        <h2 className="text-center text-3xl sm:text-4xl font-semibold mb-12">
           Find Out More Over a Free Introduction Call
         </h2>
         <Link
-          className="bg-baby_blue rounded-xl hover:bg-blue-500 text-white font-bold py-2 px-4"
+          className="bg-brand_secondary rounded-xl hover:bg-blue-500 text-white font-bold py-2 px-4"
           to="https://calendly.com/marsel-tutors/meeting"
         >
           Schedule Your Lesson
