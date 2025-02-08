@@ -8,14 +8,47 @@ const GameDev: React.FC = () => {
     <>
       <Navbar />
       <div className="flex flex-col h-full w-full mt-14 dark:bg-dark_primary text-dark_secondary dark:text-white">
-
-        <div style={{ maxHeight: '60vh' }} className="w-full overflow-hidden">
-          <img src={internshipBanner} alt="Game Development Banner" className="w-full h-auto" />
+        <div className="block md:hidden">
+          <div className="relative w-full">
+            {/* Mobile hero image with gradient overlay */}
+            <div className="relative">
+              <img
+                src={internshipBanner}
+                alt="Internship Banner"
+                className="w-full h-auto"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-100" />
+            </div>
+            {/* Title overlay in the center */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center">
+              <h1 className="text-gray-100 text-2xl sm:text-6xl font-bold drop-shadow-md text-center px-4">
+              Secure Your First Internship
+              </h1>
+            </div>
+          </div>
         </div>
 
-        <div className="text-center my-8">
-          <h1 className="text-3xl font-bold text-brand_secondary">SECURE YOUR FIRST INTERNSHIP IN SOFTWARE DEVELOPMENT</h1>
-        </div>
+        {/* =========================================
+            DESKTOP HERO (md and up)
+        ========================================= */}
+        <div className="hidden md:flex w-full">
+          {/* Left side: text content */}
+          <div className="md:w-1/2 flex flex-col justify-center p-8">
+            <h1 className="text-5xl font-extrabold text-brand_secondary dark:text-white mb-4">
+              SECURE YOUR FIRST INTERNSHIP
+            </h1>
+            <h3 className="text-lg text-gray-600 dark:text-gray-200">
+              Resume Building, Technical Interview Prep, and Behavioral Skills
+            </h3>
+          </div>
+          <div className="md:w-1/2">
+            <img
+              src={internshipBanner}
+              alt="Internship Banner"
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        </div>  
 
         <div className="max-w-lg mx-auto p-6 shadow-lg rounded-lg text-center shadow-slate-300">
           <h2 className="text-2xl font-bold mb-4">Build yourself up step-by-step professionally as a Computer Science student:</h2>

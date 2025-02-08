@@ -10,7 +10,6 @@ export default {
       colors: {
         brand_primary: '#820000',
         brand_secondary: '#CF9B67',
-        purp: '#5F4B8B',
         secondary: '#1b2720',
         dark_primary: '#121212',
         dark_secondary: '#262626',
