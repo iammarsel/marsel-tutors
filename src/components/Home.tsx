@@ -41,7 +41,7 @@ const Home: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-             Learn More
+            Learn More
           </Link>
         </div>
       </section>
@@ -132,7 +132,7 @@ const Home: React.FC = () => {
                 ))}
               </div>
               <p className="text-sm/6 mb-4">
-                I love playing Roblox games and now know how to make my own!
+              Marcos has thoroughly enjoyed his Python and Roblox lessons with Marsel. The engaging and thoughtfully crafted classes have captured his interest, even as a teenager. We’ve seen remarkable improvement in his skills and enthusiasm for learning. Marsel’s ability to tailor lessons to individual needs has kept Marcos committed and excited about future sessions. Highly recommended for a rewarding educational experience!
               </p>
               </div>
             
@@ -240,7 +240,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Limited Time Offer Section */}
-      <section className="py-20 text-center px-4">
+      <section className="py-20 text-center px-4 flex flex-col items-center">
         <h2 className="text-center text-3xl sm:text-4xl font-semibold mb-12">
           Find Out More Over a Free Introduction Call
         </h2>
@@ -250,8 +250,12 @@ const Home: React.FC = () => {
         >
           Schedule Your Lesson
         </Link>
+        <Link to="/shatabdi" className="mt-12 text-white bg-pink-500 hover:bg-pink-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-sm px-3 py-2 text-center dark:bg-dark-secondary">
+        Birthday Girl
+        </Link>
+        
       </section>
-
+      
       {/* Footer */}
       <footer className="text-center text-lg py-6 border-t border-gray-200 dark:border-gray-700">
         © 2025 MarselTutors. All Rights Reserved.
