@@ -7,7 +7,6 @@ import Software from './Software';
 import Internship from './Internship';
 import ScrollToTop from './ScrollToTop';
 import Resume from './Resume';
-import Shatabdi from './Shatabdi';
 const MainContent = () => {
   const { darkMode } = useContext(DarkModeContext);
 
@@ -21,7 +20,6 @@ const MainContent = () => {
           <Route path="/software" element={<Software />} />
           <Route path="/internship" element={<Internship />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="/shatabdi" element={<Shatabdi />} />
         </Routes>
       </Router>
     </div>

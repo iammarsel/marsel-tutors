@@ -250,9 +250,6 @@ const Home: React.FC = () => {
         >
           Schedule Your Lesson
         </Link>
-        <Link to="/shatabdi" className="mt-12 text-white bg-pink-500 hover:bg-pink-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-sm px-3 py-2 text-center dark:bg-dark-secondary">
-        Birthday Girl
-        </Link>
         
       </section>
       
